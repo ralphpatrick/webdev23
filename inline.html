@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Training | Home ✔</title>
+    <link rel="shortcut icon" href="./img/twitter.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        html {scroll-behavior: smooth;}
+        body {
+            font-family: sans-serif;
+            margin-bottom: 500px;
+        }
+        
+        .topic {
+            font-style: italic;
+            color: olivedrab;
+        }
+        
+        #page-title {
+            font-style: normal;
+            font-size: 50px;
+        }
+        
+        .topich3 {
+            font-style: bold;
+            color: rebeccapurple;
+        }
+        
+    </style>
+</head>
+<body>
+  <a href="https://www.inventivemedia.com.ph/" target="_blank">Inventive Media</a>
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About Us</a>
+  <a href="./services.html">Services</a>
+  <a href="./contact.html">Contact Us</a>
+    <!-- There should only be 1 H1 -->
+    <!-- CTRL + / = Comment a line --> <!-- SHIFT + ALT + A = Comment inline -->
+    <!-- Windows + ; = emoji keyboard👍😂🎶😁 -->
+    <h1 
+    title="This is a Global Attribute"
+    style="color: goldenrod;"
+    class="topic"
+    id="page-title"
+    >Inline Elements 🔗</h1>
+
+    
+    <nav>
+		<a href="./index.html">Home 🏠</a>
+		<a href="./block.html">Block 🧱</a>
+		<a href="./inline.html">Inline 🔗</a>
+		<label for="nav-toggle">Menu 📄</label>
+
+		<hr>
+
+		<input type="checkbox" name="nav-toggle" id="nav-toggle">
+
+		<ul>
+			<li><a href="#span">Span</a></li>
+			<li><a href="#sei">Strong | Emphasis | Insert</a></li>
+			<li><a href="#hf">HTML Forms</a></li>
+			<li><a href="#img">Images</a></li>
+			<li><a href="#tl">Text Links</a></li>
+			<li><a href="#il">Image Links</a></li>
+			<li><a href="#em">Embedding Media</a></li>
+			<li><a href="#oe">Other Embeds</a></li>
+			<li><a href="#alql">Anchor Links | Quick Links</a></li>
+		</ul>
+	</nav>
+    <h3 class="topich3">Inline Elements 📎</h3>
+    <hr>
+    <h3 class="topic" id="span">Span</h3>
+    <hr>
+    <!-- same with div but its inline -->
+    
+    <p>Span is a generic in-line wrapper to 
+        <span style="color: navy; font-weight: bold;">emphasize</span>
+        something
+    </p>
+    
+    <h3 class="topic" id="sei">Strong | Emphasis | Insert</h3>
+    <hr>
+    <!-- strong: bold, em:italic, ins: underline -->
+    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus dolorem</strong><em> maxime, totam numquam ad eveniet ea, provident enim porro molestiae accusantium</em> <ins>rem ipsa quos officia harum quae quo asperiores.</ins>
+    </p>
+    
+    <h3 class="topic" id="hf">HTML Forms</h3>
+    <hr>
+    
+    <form action="">
+        
+        <div>
+            <!-- Text input -->
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Panado, Jan G." id="name" name="name" autocomplete="name"><!-- required autocomplete-->
+            <span></span>
+        </div>
+        
+        <div>
+            <!-- Search input:search -->
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search" list="choices">
+        </div>
+        
+        <!-- datalist  -->
+        <datalist id="choices">
+            <option value="🍫 Chocolate"></option>
+            <option value="🥥 Coconut"></option>
+            <option value="🍃 Mint"></option>
+            <option value="🍓 Strawberry"></option>
+            <option value="🍦 Vanilla"></option>
+        </datalist>
+        
+        <div>
+            <!-- Password input:password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" minlength="8" required>
+        </div>
+        
+        <div>
+            <!-- Telephone input:tel -->
+            <label for="tel">Mobile</label>
+            <input type="tel" name="tel" id="tel" required>
+        </div>
+        
+        <div>
+            <!-- Email input:email -->
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail">
+            <span></span>
+        </div>
+        
+        <fieldset>
+            <!-- Checkbox input:checkbox -->
+            <legend>What are your Interests?</legend>
+            <label for="food">Food</label>
+            <input type="checkbox" name="interests" id="food" checked>
+            <label for="fashion">Fashion</label>
+            <input type="checkbox" name="interests" id="fashion">
+            <label for="travel">Travel</label>
+            <input type="checkbox" name="interests" id="travel">
+        </fieldset>
+        
+        <fieldset>
+            <!-- Radio Button input:radio -->
+            <legend>Gender</legend>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="femail">Female</label>
+            <input type="radio" name="gender" id="femail">
+            <label for="rns">Rather Not Say</label>
+            <input type="radio" name="gender" id="rns">
+        </fieldset>
+        
+        <div>
+            <!-- File input:file -->
+            <label for="file">File Upload</label>
+            <input type="file" name="upload" id="file">
+        </div>
+        
+        <div>
+            <!-- Date input:date -->
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        
+        <div>
+            <!-- Datetime Local input:datetime-local -->
+            <label for="datetime-local">Datetime Local</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+        </div>
+        
+        <div>
+            <!-- Color input:color -->
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        
+        <div>
+            <!-- Range input:range -->
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" value="0">
+        </div>
+        
+        <div>
+            <!-- textarea-->
+            <label for="textarea">Text Area</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <!-- select -->
+            <label for="select">Select</label>
+            <select name="browsers" id="select">
+                <option value="chrome">Chrome</option>
+                <option value="safari">Safari</option>
+                <option value="firefox">Firefox</option>
+                <option value="brave" selected>Brave</option>
+            </select>
+            
+            <label for="multi-select">Multi-Select</label>
+            <select name="courses" id="multi-select" multiple="true">
+                <option value="html">html</option>
+                <option value="css">CSS</option>
+                <option value="bootstrap">Firefox</option>
+                <option value="javascript">Javascript</option>
+            </select>
+        </div>
+        
+        <fieldset>
+            <!-- input:reset input:submit button -->
+            <legend>Reset / Submit</legend>
+            
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit Input">
+            <button>Submit Button</button>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Use When Doing Something</legend>
+            
+            <button type="button">
+                <i class="fas fa-paper-plane"></i>
+                Generic Button
+            </button>
+            
+            <input
+            type="button"
+            value="Generic Input"
+            onclick="
+            document.querySelector('form').appendChild(
+            document.createTextNode(
+            prompt('What is your name?')
+            ))">
+            
+            <a role="button">Generic Anchor</a>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Use This When Going Somewhere</legend>
+            
+            <a href="#">Link Anchor</a>
+        </fieldset>
+        
+    </form>
+    
+    <h3 class="topic" id="img">Images</h3>
+    <hr>
+
+    <!-- //unsplash.it/150/150 -->
+
+    <!-- Global absolute link -->
+    <img src="//unsplash.it/150/150" alt="Dog" width="150">
+    <!-- Local Absolute link Dont Use XXXXX -->
+    <img src="C:\Users\User\Desktop\day1-html\img\crochet.jpg" alt="..." width="150">
+    <!-- Local Relative Link -->
+    <img src="./img/crochet.jpg" alt="..." width="150">
+
+    <h3 class="topic" id="tl">Text Links</h3>
+    <hr>
+    <a href="mailto:ralph@gmail.com">Email Us</a>
+    <a href="tel:+63219685140">Call Us</a>
+
+    <h3 class="topic" id="il">Image Links</h3>
+    <hr>
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="./img/facebook.png" alt="..." width="50">
+    </a>
+
+    <!-- View bigger image -->
+    <a href="./img/crochet.jpg" target="_blank">
+        <img src="./img/crochet.jpg" alt="..." width="50">
+    </a>
+    <a href="./img/crochet.jpg" download>
+        <img src="./img/crochet.jpg" alt="..." width="50">
+    </a>
+    <a href="./misc/html-slides.pdf" download>
+        <img src="./img/pdf.png" alt="..." width="50">
+    </a>
+    <a href="./misc/sample.zip">
+        <img src="./img/zip.png" alt="..." width="50">
+    </a>
+
+
+    <h3 class="topic" id="em">Embedding Media</h3>
+    <hr>
+    <h4>Internal Embedding</h4>
+    <!-- audio -->
+    <!-- optional attributes = controls, autoplay, muted, loop -->
+    <audio src="./audio/audio.mp3" controls muted></audio>
+    <!-- video -->
+    <!-- optional attributes = controls, width, height, poster -->
+    <video src="./video/video.mp4" poster="img\frenchpress-coffee.jpg" controls height="200"></video>
+    <h4>External Embedding</h4>
+    <!-- soundcloud and youtube -->
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1506351019&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/s3bzs" title="S3BZS" target="_blank" style="color: #cccccc; text-decoration: none;">S3BZS</a> · <a href="https://soundcloud.com/s3bzs/montagem-pr-funk" title="MONTAGEM - PR FUNK" target="_blank" style="color: #cccccc; text-decoration: none;">MONTAGEM - PR FUNK</a></div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MPrcQyQpXO8?controls=0&amp;start=45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3 class="topic" id="oe">Other Embeds</h3>
+    <hr>
+    <!-- manual embed -->
+    <iframe src="https://www.inventivemedia.com.ph/" frameborder="0" width="700" height="450"></iframe>
+    <iframe src="misc\html-slides.pdf" frameborder="0" width="700" height="450"></iframe>
+    <iframe src="https://drive.google.com/file/d/1IL-KCi4YVVvJx8wylwbSlqdmIhQcvbB1/preview" width="450" height="450" allow="autoplay" width="700" height="700"></iframe>
+
+    <!-- google sheet -->
+    <iframe width="450" height="450" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSlFQzx-hpK4BPSXrqBzno0KeN--f2mgGRy5Nb9ELlfHRjlhv5-xb2VStNnub3N5s9vNC2JRceT8Cwm/pubhtml?widget=true&amp;headers=false"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.5769597594867!2d121.01130697373351!3d14.566167785916136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a04480d30b%3A0xeb58a3874cff7c5d!2sInventive%20Media!5e0!3m2!1sen!2sph!4v1688118447953!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3 class="topic" id="alql">Anchor Links | Quick Links</h3>
+    <hr>
+    
+    <a href="#page-title">Back to Top</a>
+
+    <script>
+		const button = document.querySelector(`button[type="button"]`);
+		button.onclick = function writeName(ask) {
+			
+			ask = prompt(`What's your Name`);
+			const txt = document.createTextNode(ask);
+			
+			const form = document.querySelector(`form`);
+			const div = form.appendChild(document.createElement(`div`));
+			div.style.fontFamily = "sans-serif";
+			div.style.fontSize = "50px";
+			div.style.textAlign = "center";
+			const content = div.appendChild(txt);
+		}
+	</script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
